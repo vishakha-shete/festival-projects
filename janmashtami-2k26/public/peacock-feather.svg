@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 300" fill="none">
+  <defs>
+    <radialGradient id="feather" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#f4b54d"/>
+      <stop offset=".18" stop-color="#df6b2f"/>
+      <stop offset=".38" stop-color="#173f78"/>
+      <stop offset=".58" stop-color="#14785f"/>
+      <stop offset=".8" stop-color="#0d4d3d"/>
+      <stop offset="1" stop-color="#071d21"/>
+    </radialGradient>
+    <linearGradient id="shaft" x1="90" y1="285" x2="92" y2="35" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c7a45a"/>
+      <stop offset=".55" stop-color="#f4df9b"/>
+      <stop offset="1" stop-color="#fff4c9"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <path d="M90 292 C87 215 83 145 90 70 C94 43 100 22 105 8" stroke="url(#shaft)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 72 C57 59 30 78 18 113 C10 137 19 164 38 179 C22 189 22 218 45 228 C34 247 52 264 74 260 C77 277 84 286 90 292 C95 282 101 272 103 257 C128 263 148 245 137 225 C160 212 156 185 140 176 C160 155 166 128 155 103 C143 72 119 59 90 72Z" fill="url(#feather)" opacity=".98" filter="url(#glow)"/>
+  <ellipse cx="91" cy="118" rx="31" ry="42" fill="#082a36"/>
+  <ellipse cx="91" cy="118" rx="24" ry="33" fill="#117b69"/>
+  <ellipse cx="91" cy="118" rx="17" ry="25" fill="#e7a34d"/>
+  <ellipse cx="91" cy="118" rx="11" ry="17" fill="#d65c2b"/>
+  <ellipse cx="91" cy="118" rx="6" ry="11" fill="#081322"/>
+  <path d="M91 74 C89 88 88 101 91 118 C95 137 92 152 91 169" stroke="#9bd5a8" stroke-width="2" opacity=".7"/>
+</svg>
