@@ -1,4 +1,4 @@
-﻿ # 🎉 Festival Projects
+ # 🎉 Festival Projects
 
 A collection of creative and interactive web projects built to celebrate
 Indian festivals. 🪷✨
