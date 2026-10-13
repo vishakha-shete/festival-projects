@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Job application form for software development positions.">
+
+    <title>Software Developer Job Application</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Software Developer Job Application</h1>
+
+        <p>
+            Apply for your next opportunity in software development.
+            Complete the form below with accurate information.
+        </p>
+
+        <nav aria-label="Main navigation">
+            <a href="#personal-information">Personal Information</a> |
+            <a href="#job-preferences">Job Preferences</a> |
+            <a href="#education">Education</a> |
+            <a href="#experience">Experience</a> |
+            <a href="#documents">Documents</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- 1. Personal Information -->
+            <section id="personal-information">
+                <fieldset>
+                    <legend>1. Personal Information</legend>
+
+                    <p>
+                        <label for="full-name">Full Name: *</label><br>
+                        <input type="text" id="full-name" name="full_name" placeholder="Enter your full name"
+                            minlength="2" maxlength="60" autocomplete="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address: *</label><br>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number: *</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit mobile number"
+                            pattern="[0-9]{10}" title="Enter a 10-digit mobile number" autocomplete="tel" required>
+                    </p>
+
+                    <p>
+                        <label for="dob">Date of Birth:</label><br>
+                        <input type="date" id="dob" name="date_of_birth">
+                    </p>
+
+                    <p>
+                        <label for="city">Current City: *</label><br>
+                        <input type="text" id="city" name="city" placeholder="Enter your city"
+                            autocomplete="address-level2" required>
+                    </p>
+
+                    <p>
+                        <label for="linkedin">LinkedIn Profile:</label><br>
+                        <input type="url" id="linkedin" name="linkedin"
+                            placeholder="https://www.linkedin.com/in/your-profile">
+                    </p>
+
+                    <p>
+                        <label for="github">GitHub Profile:</label><br>
+                        <input type="url" id="github" name="github" placeholder="https://github.com/your-username">
+                    </p>
+
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- 2. Job Preferences -->
+            <section id="job-preferences">
+                <fieldset>
+                    <legend>2. Job Preferences</legend>
+
+                    <p>
+                        <label for="position">Preferred Position: *</label><br>
+
+                        <select id="position" name="position" required>
+                            <option value="">-- Select a Position --</option>
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="fullstack">Full Stack Developer</option>
+                            <option value="software-engineer">Software Engineer</option>
+                            <option value="web-developer">Web Developer</option>
+                        </select>
+                    </p>
+
+                    <p>Employment Type: *</p>
+
+                    <input type="radio" id="full-time" name="employment_type" value="full-time" required>
+                    <label for="full-time">Full-time</label><br>
+
+                    <input type="radio" id="internship" name="employment_type" value="internship">
+                    <label for="internship">Internship</label><br>
+
+                    <input type="radio" id="contract" name="employment_type" value="contract">
+                    <label for="contract">Contract</label>
+
+                    <p>Preferred Work Mode: *</p>
+
+                    <input type="radio" id="remote" name="work_mode" value="remote" required>
+                    <label for="remote">Remote</label><br>
+
+                    <input type="radio" id="hybrid" name="work_mode" value="hybrid">
+                    <label for="hybrid">Hybrid</label><br>
+
+                    <input type="radio" id="onsite" name="work_mode" value="onsite">
+                    <label for="onsite">On-site</label>
+
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- 3. Technical Skills -->
+            <section id="skills">
+                <fieldset>
+                    <legend>3. Technical Skills</legend>
+
+                    <p>Select the technologies you know:</p>
+
+                    <input type="checkbox" id="html" name="skills" value="HTML">
+                    <label for="html">HTML</label><br>
+
+                    <input type="checkbox" id="css" name="skills" value="CSS">
+                    <label for="css">CSS</label><br>
+
+                    <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+                    <label for="javascript">JavaScript</label><br>
+
+                    <input type="checkbox" id="react" name="skills" value="React">
+                    <label for="react">React.js</label><br>
+
+                    <input type="checkbox" id="node" name="skills" value="Node.js">
+                    <label for="node">Node.js</label><br>
+
+                    <input type="checkbox" id="express" name="skills" value="Express.js">
+                    <label for="express">Express.js</label><br>
+
+                    <input type="checkbox" id="mongodb" name="skills" value="MongoDB">
+                    <label for="mongodb">MongoDB</label><br>
+
+                    <input type="checkbox" id="sql" name="skills" value="SQL">
+                    <label for="sql">SQL</label><br>
+
+                    <input type="checkbox" id="git" name="skills" value="Git">
+                    <label for="git">Git and GitHub</label>
+
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- 4. Education -->
+            <section id="education">
+                <fieldset>
+                    <legend>4. Education Details</legend>
+
+                    <p>
+                        <label for="qualification">Highest Qualification: *</label><br>
+
+                        <select id="qualification" name="qualification" required>
+                            <option value="">-- Select Qualification --</option>
+                            <option value="btech">B.Tech / B.E.</option>
+                            <option value="bca">BCA</option>
+                            <option value="mca">MCA</option>
+                            <option value="bsc">B.Sc.</option>
+                            <option value="mtech">M.Tech / M.E.</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="college">College / University Name: *</label><br>
+                        <input type="text" id="college" name="college" placeholder="Enter your institution name"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="graduation-year">Graduation Year: *</label><br>
+                        <input type="number" id="graduation-year" name="graduation_year" min="1990" max="2035" required>
+                    </p>
+
+                    <p>
+                        <label for="grade">CGPA or Percentage:</label><br>
+                        <input type="number" id="grade" name="grade" min="0" max="100" step="0.01"
+                            placeholder="Enter your score">
+                        <br>
+                        <small>
+                            Enter your percentage out of 100, or your CGPA
+                            using the same numeric field.
+                        </small>
+                    </p>
+
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- 5. Experience -->
+            <section id="experience">
+                <fieldset>
+                    <legend>5. Experience Details</legend>
+
+                    <p>
+                        <label for="experience-level">Experience Level: *</label><br>
+
+                        <select id="experience-level" name="experience_level" required>
+                            <option value="">-- Select Experience --</option>
+                            <option value="fresher">Fresher</option>
+                            <option value="entry-level">Entry-level</option>
+                            <option value="mid-level">Mid-level</option>
+                            <option value="senior">Senior</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="years">Years of Experience:</label><br>
+                        <input type="number" id="years" name="years_of_experience" min="0" max="50" step="1" value="0">
+                    </p>
+
+                    <p>
+                        <label for="company">Previous Company (Optional):</label><br>
+                        <input type="text" id="company" name="previous_company" placeholder="Enter company name">
+                    </p>
+
+                    <p>
+                        <label for="portfolio">Portfolio URL:</label><br>
+                        <input type="url" id="portfolio" name="portfolio" placeholder="https://your-portfolio.com">
+                    </p>
+
+                    <p>
+                        <label for="projects">Describe Your Projects: *</label><br>
+                        <textarea id="projects" name="projects" rows="5" cols="40" minlength="20" maxlength="1000"
+                            placeholder="Describe your projects and the technologies you used" required></textarea>
+                    </p>
+
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- 6. Documents -->
+            <section id="documents">
+                <fieldset>
+                    <legend>6. Upload Documents</legend>
+
+                    <p>
+                        <label for="resume">Upload Resume (PDF): *</label><br>
+                        <input type="file" id="resume" name="resume" accept=".pdf,application/pdf" required>
+                    </p>
+
+                    <p>
+                        <label for="photo">Upload Profile Photo (Optional):</label><br>
+                        <input type="file" id="photo" name="photo" accept="image/*">
+                    </p>
+
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- 7. Additional Information -->
+            <section id="additional-information">
+                <fieldset>
+                    <legend>7. Additional Information</legend>
+
+                    <p>
+                        <label for="salary">Expected Annual Salary (INR):</label><br>
+                        <input type="number" id="salary" name="expected_salary" min="0" max="100000000" step="1000"
+                            placeholder="Enter amount in rupees">
+                    </p>
+
+                    <p>
+                        <label for="notice">Notice Period:</label><br>
+
+                        <select id="notice" name="notice_period">
+                            <option value="">-- Select Notice Period --</option>
+                            <option value="immediate">Immediate</option>
+                            <option value="15-days">15 days</option>
+                            <option value="30-days">30 days</option>
+                            <option value="60-days">60 days</option>
+                            <option value="90-days">90 days</option>
+                        </select>
+                    </p>
+
+                    <p>Are you willing to relocate?</p>
+
+                    <input type="radio" id="relocate-yes" name="relocate" value="yes">
+                    <label for="relocate-yes">Yes</label><br>
+
+                    <input type="radio" id="relocate-no" name="relocate" value="no">
+                    <label for="relocate-no">No</label><br>
+
+                    <input type="radio" id="relocate-depends" name="relocate" value="depends">
+                    <label for="relocate-depends">Depends on the opportunity</label>
+
+                    <p>
+                        <label for="cover-letter">Cover Letter:</label><br>
+                        <textarea id="cover-letter" name="cover_letter" rows="7" cols="40" minlength="50"
+                            maxlength="2000" placeholder="Tell us why you are a good fit for this position"></textarea>
+                    </p>
+
+                    <p>
+                        <label for="interview-time">Preferred Interview Time:</label><br>
+
+                        <input type="text" id="interview-time" name="interview_time" list="interview-options"
+                            placeholder="Choose or enter a time">
+
+                        <datalist id="interview-options">
+                            <option value="9 AM - 11 AM">
+                            <option value="11 AM - 1 PM">
+                            <option value="2 PM - 4 PM">
+                            <option value="4 PM - 6 PM">
+                        </datalist>
+                    </p>
+
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- 8. Declaration -->
+            <section id="declaration">
+                <fieldset>
+                    <legend>8. Declaration</legend>
+
+                    <input type="checkbox" id="declaration-checkbox" name="declaration" value="confirmed" required>
+
+                    <label for="declaration-checkbox">
+                        I confirm that the information provided in this application
+                        is accurate and complete.
+                    </label>
+
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- Submit and Reset -->
+            <section>
+                <button type="submit">Submit Application</button>
+                <button type="reset">Reset Form</button>
+            </section>
+
+        </form>
+
+    </main>
+
+    <hr>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <h2>Contact Information</h2>
+
+        <p>
+            Email:
+            <a href="mailto:vishakhashete2@gmail.com">
+                vishakhashete2@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <a href="#home">Back to Top ↑</a>
+        </p>
+
+        <p>
+            &copy; 2026 Software Developer Job Application.
+            Created for HTML learning practice.
+        </p>
+    </footer>
+
+</body>
+
+</html>
