@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A student academic performance dashboard built using HTML.">
+    <title>Student Result Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Student Result Dashboard</h1>
+        <p>Track academic performance, subjects, and learning progress.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="#profile">Profile</a> |
+            <a href="#results">Results</a> |
+            <a href="#progress">Progress</a> |
+            <a href="#feedback">Feedback</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- Student Profile -->
+        <section id="profile">
+            <h2>Student Profile</h2>
+
+            <p><strong>Name:</strong> Vishakha Shete</p>
+            <p><strong>Degree:</strong> B.Tech in Computer Science and Engineering</p>
+            <p><strong>Graduation Year:</strong> 2025</p>
+            <p><strong>Learning Goal:</strong> Become a Software Engineer</p>
+        </section>
+
+        <hr>
+
+        <!-- Academic Summary -->
+        <section id="summary">
+            <h2>Academic Summary</h2>
+
+            <table border="1">
+                <caption>Academic Performance Overview</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Metric</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Subjects</th>
+                        <td>5</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Total Maximum Marks</th>
+                        <td>500</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Total Marks Obtained</th>
+                        <td>425</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Percentage</th>
+                        <td>85%</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Result</th>
+                        <td>Pass</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Subject Results -->
+        <section id="results">
+            <h2>Subject-wise Results</h2>
+
+            <table border="1">
+                <caption>Semester Examination Results</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Maximum Marks</th>
+                        <th scope="col">Marks Obtained</th>
+                        <th scope="col">Percentage</th>
+                        <th scope="col">Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Data Structures</td>
+                        <td>100</td>
+                        <td>90</td>
+                        <td>90%</td>
+                        <td>Pass</td>
+                    </tr>
+
+                    <tr>
+                        <td>Database Management</td>
+                        <td>100</td>
+                        <td>85</td>
+                        <td>85%</td>
+                        <td>Pass</td>
+                    </tr>
+
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>80%</td>
+                        <td>Pass</td>
+                    </tr>
+
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td>100</td>
+                        <td>85</td>
+                        <td>85%</td>
+                        <td>Pass</td>
+                    </tr>
+
+                    <tr>
+                        <td>Web Development</td>
+                        <td>100</td>
+                        <td>85</td>
+                        <td>85%</td>
+                        <td>Pass</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row" colspan="2">Total</th>
+                        <td>425 / 500</td>
+                        <td>85%</td>
+                        <td>Pass</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Learning Progress -->
+        <section id="progress">
+            <h2>Learning Progress</h2>
+
+            <article>
+                <h3>HTML</h3>
+                <p>Progress toward completing HTML practice:</p>
+                <progress value="5" max="30">5 out of 30</progress>
+                <p>5 of 30 planned practice days completed.</p>
+            </article>
+
+            <article>
+                <h3>JavaScript</h3>
+                <p>Sample self-assessment of JavaScript proficiency:</p>
+                <meter min="0" max="100" value="60">60%</meter>
+                <p>Example rating: 60%</p>
+            </article>
+
+            <article>
+                <h3>Problem Solving</h3>
+                <p>Sample self-assessment of problem-solving skills:</p>
+                <meter min="0" max="100" value="45">45%</meter>
+                <p>Example rating: 45%</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Weekly Timetable -->
+        <section id="timetable">
+            <h2>Weekly Learning Timetable</h2>
+
+            <table border="1">
+                <caption>Sample Weekly Study Schedule</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Morning</th>
+                        <th scope="col">Afternoon</th>
+                        <th scope="col">Evening</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td>Practice</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Tuesday</th>
+                        <td>HTML</td>
+                        <td>JavaScript</td>
+                        <td>Revision</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Wednesday</th>
+                        <td>CSS</td>
+                        <td>Projects</td>
+                        <td>Practice</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Thursday</th>
+                        <td>JavaScript</td>
+                        <td>HTML</td>
+                        <td>Revision</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Friday</th>
+                        <td>Forms</td>
+                        <td>Tables</td>
+                        <td>Mini Project</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Saturday</th>
+                        <td colspan="2">Build a Project</td>
+                        <td>GitHub Update</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Sunday</th>
+                        <td colspan="3">Revision and Weekly Planning</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Student Feedback -->
+        <section id="feedback">
+            <h2>Student Feedback Form</h2>
+
+            <form action="#" method="get">
+
+                <p>
+                    <label for="student-name">Student Name:</label><br>
+                    <input
+                        type="text"
+                        id="student-name"
+                        name="student_name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="subject">Select Subject:</label><br>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Choose a Subject --</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="dsa">Data Structures</option>
+                    </select>
+                </p>
+
+                <p>How would you rate your learning experience?</p>
+
+                <input type="radio" id="excellent" name="rating" value="excellent" required>
+                <label for="excellent">Excellent</label><br>
+
+                <input type="radio" id="good" name="rating" value="good">
+                <label for="good">Good</label><br>
+
+                <input type="radio" id="average" name="rating" value="average">
+                <label for="average">Average</label>
+
+                <p>
+                    <label for="comments">Comments:</label><br>
+                    <textarea
+                        id="comments"
+                        name="comments"
+                        rows="5"
+                        cols="40"
+                        placeholder="Share your feedback"
+                    ></textarea>
+                </p>
+
+                <button type="submit">Submit Feedback</button>
+                <button type="reset">Reset Form</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            Email:
+            <a href="mailto:vishakhashete2@gmail.com">
+                vishakhashete2@gmail.com
+            </a>
+        </p>
+
+        <p>&copy; 2026 Student Result Dashboard. Built with HTML.</p>
+
+        <a href="#home">Back to Top ↑</a>
+    </footer>
+
+</body>
+</html>
