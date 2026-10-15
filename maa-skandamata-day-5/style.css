@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: #fff0b8;
+  color: #382014;
+  font-family: 'Poppins', sans-serif;
+}
+
+.experience {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 420px;
+  overflow: hidden;
+  isolation: isolate;
+  background: #fff0b8;
+}
+
+.devi-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #fff0b8;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#revealCanvas {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.intro {
+  position: absolute;
+  z-index: 3;
+  top: clamp(18px, 4vh, 44px);
+  left: 50%;
+  width: min(92%, 700px);
+  transform: translateX(-50%);
+  text-align: center;
+  pointer-events: none;
+  text-shadow: 0 1px 12px rgba(255, 244, 199, .95);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: clamp(8px, 1vw, 11px);
+  letter-spacing: clamp(1.5px, .35vw, 4px);
+  color: #875b17;
+}
+
+h1 {
+  margin: 0;
+  color: #25120c;
+  font: 600 clamp(28px, 4.3vw, 54px)/1.15 'Cinzel', serif;
+}
+
+.instruction {
+  margin: 10px 0 0;
+  font-size: clamp(10px, 1.2vw, 13px);
+  color: #6e4c2b;
+}
+
+.start-mark {
+  display: inline-block;
+  margin-top: 7px;
+  color: #b27b19;
+  font-size: 22px;
+  animation: pulse 1.7s ease-in-out infinite;
+}
+
+.intro.is-gone {
+  opacity: 0;
+  transform: translate(-50%, -12px);
+}
+
+.bottom-note {
+  position: absolute;
+  z-index: 4;
+  bottom: clamp(10px, 2.5vh, 24px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 90%;
+  color: #7e4d15;
+  font-size: clamp(13px, 1.5vw, 18px);
+  text-align: center;
+  text-shadow: 0 1px 8px #fff4c6;
+  pointer-events: none;
+}
+
+#replayButton {
+  position: absolute;
+  z-index: 6;
+  right: 14px;
+  bottom: 14px;
+  padding: 9px 14px;
+  border: 1px solid rgba(130, 83, 18, .45);
+  border-radius: 30px;
+  background: rgba(255, 248, 219, .92);
+  color: #654016;
+  font: 500 11px 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: .45;
+    transform: scale(.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-height: 540px) {
+  .intro {
+    top: 10px;
+  }
+
+  .instruction {
+    margin-top: 5px;
+  }
+
+  .start-mark {
+    margin-top: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .start-mark {
+    animation: none;
+  }
+
+  .intro {
+    transition: none;
+  }
+}
