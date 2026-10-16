@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111a14">
+  <title>Maa Katyayani — Fullscreen Pencil Reveal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="screen" id="screen">
+    <img id="reference" src="maa-katyayani-reference.jpg" alt="Maa Katyayani seated on her lion">
+    <canvas id="sketch" aria-label="Maa Katyayani appearing gradually as a realistic pencil sketch"></canvas>
+    <div class="shade"></div>
+    <div class="intro" id="intro"><span class="ornament">✺</span>
+      <p>NAVRATRI · DAY 6</p>
+      <h1>Maa Katyayani</h1><small>Every pencil stroke is a prayer.</small>
+    </div>
+    <div class="pencil" id="pencil" aria-hidden="true">✏️</div>
+    <div class="hud"><span id="status">Preparing the drawing…</span><span id="percent">0%</span></div>
+    <div class="progress">
+      <div id="bar"></div>
+    </div>
+    <button id="replay" type="button" aria-label="Replay drawing">↻ <span>Replay</span></button>
+    <div class="blessing" id="blessing">जय माता दी 🌿</div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
