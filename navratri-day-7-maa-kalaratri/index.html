@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080611" />
+
+  <title>Day 7 — Maa Kalaratri | A Code-Made Divine Reveal</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="stage" id="stage">
+
+    <!-- Animated cosmic background -->
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <!-- Top navigation -->
+    <header class="topline">
+      <span class="day-chip">
+        <i></i>
+        NAVRATRI • DAY 07
+      </span>
+
+      <span class="series">
+        9 NIGHTS · 9 DIVINE FORMS
+      </span>
+    </header>
+
+    <!-- Main content -->
+    <section class="hero">
+
+      <div class="eyebrow">
+        <span class="ornament">✦</span>
+        THE NIGHT THAT DESTROYS FEAR
+        <span class="ornament">✦</span>
+      </div>
+
+      <h1>
+        MAA <span>KALARATRI</span>
+      </h1>
+
+      <p class="subtitle">
+        Fearless in the darkness. Powerful beyond it.
+      </p>
+
+      <!-- Goddess artwork reveal -->
+      <div class="art-wrap" id="artWrap">
+
+        <div class="halo halo-one" aria-hidden="true"></div>
+        <div class="halo halo-two" aria-hidden="true"></div>
+
+        <div class="lightning lightning-a" aria-hidden="true"></div>
+        <div class="lightning lightning-b" aria-hidden="true"></div>
+
+        <div class="divine-art" id="divineArt"
+          aria-label="Maa Kalaratri devotional artwork being revealed step by step">
+          <img src="maa-kalaratri.jpg"
+            alt="Maa Kalaratri seated on her sacred mount, surrounded by devotional decoration" />
+
+          <div class="image-shimmer" aria-hidden="true"></div>
+        </div>
+
+        <div class="energy-ring" aria-hidden="true"></div>
+      </div>
+
+      <!-- Divine mantra -->
+      <div class="mantra">
+        <span>ॐ देवी कालरात्र्यै नमः</span>
+        <small>OM DEVI KALARATRYAI NAMAH</small>
+      </div>
+
+      <div class="reveal-copy" id="revealCopy">
+        A DIVINE REVEAL, WRITTEN IN CODE
+      </div>
+
+      <!-- Animation progress -->
+      <div class="progress-row">
+        <span id="status" aria-live="polite">
+          AWAKENING THE COSMOS
+        </span>
+
+        <span id="percent">0%</span>
+      </div>
+
+      <div class="progress-track" role="progressbar" aria-label="Divine artwork reveal progress" aria-valuemin="0"
+        aria-valuemax="100" aria-valuenow="0" id="progressTrack">
+        <span id="progressBar"></span>
+      </div>
+
+      <!-- Replay animation -->
+      <button id="replay" type="button">
+        ↻ &nbsp; REPLAY THE REVEAL
+      </button>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <span>
+        CRAFTED WITH <b>♥</b> + HTML · CSS · JS
+      </span>
+
+      <span>
+        SHUBH NAVRATRI <b>✦</b>
+      </span>
+    </footer>
+
+    <!-- Final reveal flash -->
+    <div class="flash" id="flash" aria-hidden="true"></div>
+
+  </main>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
