@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 CareerConnect</h1>
+        <p>Take the next step in your career!</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Job Application Form</h2>
+        <p>Apply for your dream job by filling out the form below.</p>
+
+        <form action="#" method="get">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="phone">Mobile Number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Job Details</legend>
+
+                <label for="position">Select Position:</label><br>
+                <select id="position" name="position" required>
+                    <option value="">Choose a role</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="fullstack">Full Stack Developer</option>
+                </select>
+                <br><br>
+
+                <label for="experience">Experience:</label><br>
+                <select id="experience" name="experience" required>
+                    <option value="">Select experience</option>
+                    <option value="fresher">Fresher</option>
+                    <option value="1-2">1–2 Years</option>
+                    <option value="3+">3+ Years</option>
+                </select>
+                <br><br>
+
+                <label for="skills">Technical Skills:</label><br>
+                <textarea id="skills" name="skills" rows="3" placeholder="HTML, CSS, JavaScript, React..."
+                    required></textarea>
+                <br><br>
+
+                <label for="resume">Resume:</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Submit Application</button>
+            <button type="reset">Clear Form</button>
+
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 CareerConnect | Built with HTML</p>
+    </footer>
+
+</body>
+
+</html>
